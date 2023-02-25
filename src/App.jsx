@@ -3,7 +3,7 @@
 
 function App() {
   return (
-    <form name='login' data-netlify='true'>
+    <form name='login' method="GET" netlify>
       <input type='hidden' name='form-name' value='login' />
       <input type='email' placeholder='Email' name='email' />
       <input type='password' placeholder='Password' name='password' />
