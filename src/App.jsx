@@ -2,8 +2,9 @@
 // import "./App.css";
 
 function App() {
+
   return (
-    <form name='login' method="POST" netlify onSubmit="submit">
+    <form name='login' method="POST" netlify onSubmit={(e) => e.preventDefault()}>
       <input type='hidden' name='form-name' value='login' />
       <input type='email' placeholder='Email' name='email' />
       <input type='password' placeholder='Password' name='password' />
