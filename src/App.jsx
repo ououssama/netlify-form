@@ -1,10 +1,15 @@
-import Contact from "./Contact"
-import './App.css'
+// import Contact from "./Contact";
+// import "./App.css";
 
 function App() {
   return (
-    <Contact />
-  )
+    <form method='POST' name='login' data-netlify='true'>
+      <input type='hidden' name='form-name' value='login' />
+      <input type='email' placeholder='Email' name='email' />
+      <input type='password' placeholder='Password' name='password' />
+      <button type='submit'>login</button>
+    </form>
+  );
 }
 
-export default App
+export default App;
